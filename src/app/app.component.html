@@ -1,7 +1,7 @@
 <li *ngFor="let locale of locales">
   <a
     queryParamsHandling="merge"
-    routerLink="/{{ locale }}/{{ currentUrl }}"
+    routerLink="/{{ locale }}/{{ currentUrl[locale] }}"
     routerLinkActive="active"
   >
     {{ locale }}
